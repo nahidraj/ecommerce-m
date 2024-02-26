@@ -14,6 +14,13 @@
 	// 	}
 	// });
 
+	$('.filter_prd_mobile').on('click', function(){
+		$('.category_main_prd').addClass('show_category_main_prd');
+	})
+	$('.close_prd_category').on('click', function(){
+    $('.category_main_prd').removeClass('show_category_main_prd');
+  })
+
 	// Fixed menu js start
 	$(window).on('scroll', function () {
 		var scroll = $(window).scrollTop();
