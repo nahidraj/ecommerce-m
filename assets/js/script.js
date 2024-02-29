@@ -16,9 +16,15 @@
 
 	$('.filter_prd_mobile').on('click', function(){
 		$('.category_main_prd').addClass('show_category_main_prd');
+		$('.category_main_prd_overlay').addClass('show_category_main_prd_overlay');
 	})
 	$('.close_prd_category').on('click', function(){
     $('.category_main_prd').removeClass('show_category_main_prd');
+		$('.category_main_prd_overlay').removeClass('show_category_main_prd_overlay');
+  })
+	$('.category_main_prd_overlay').on('click', function(){
+		$('.category_main_prd').removeClass('show_category_main_prd');
+		$('.category_main_prd_overlay').removeClass('show_category_main_prd_overlay');
   })
 
 	// Fixed menu js start

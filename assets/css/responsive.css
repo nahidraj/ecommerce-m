@@ -148,7 +148,7 @@
   .filter_item .category_main_prd {
     position: fixed;
     top: 0;
-    left: -320px;
+    right: -320px;
     width: 320px;
     height: 100%;
     background-color: #fff;
@@ -160,7 +160,24 @@
   }
 
   .show_category_main_prd {
-    left: 0 !important;
+    right: 0 !important;
+  }
+
+  .category_main_prd_overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+  }
+  .show_category_main_prd_overlay {
+    opacity: 1;
+    visibility: visible;
   }
 
   .close_prd_category {
