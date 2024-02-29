@@ -2263,6 +2263,14 @@ footer .contact-details ul li .mail {
 	padding-left: 120px;
 }
 
+.product_details_area .prd_image .product-image-slider .parent-container img {
+	transition: 2s;
+}
+
+.product_details_area .prd_image .product-image-slider .parent-container:hover img {
+	transform: scale(1.2);
+}
+
 .product_details_area .prd_image .slick-dots {
 	position: absolute;
 	top: 0;
